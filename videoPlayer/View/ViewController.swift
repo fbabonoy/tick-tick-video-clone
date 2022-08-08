@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol playerContoller: AnyObject {
-    func play()
-    func pause()
-}
-
 class ViewController: UIViewController, UICollectionViewDataSource {
     
     lazy var carousel: UICollectionView = {

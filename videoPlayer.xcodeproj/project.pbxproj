@@ -13,9 +13,29 @@
 		24565A6328970286006EB856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24565A6228970286006EB856 /* Assets.xcassets */; };
 		24565A6628970286006EB856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24565A6428970286006EB856 /* LaunchScreen.storyboard */; };
 		24565A6E28973573006EB856 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A6D28973573006EB856 /* CollectionViewCell.swift */; };
-		24565A71289748F6006EB856 /* banana.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24565A70289748F6006EB856 /* banana.mp4 */; };
 		24565A7628A08F6A006EB856 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A7528A08F6A006EB856 /* Overlay.swift */; };
+		24565A7828A1CC8C006EB856 /* banana.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24565A7728A1CC8C006EB856 /* banana.mp4 */; };
+		24565A8028A1CDB8006EB856 /* videoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A7F28A1CDB8006EB856 /* videoPlayerTests.swift */; };
+		24565A8D28A1D23E006EB856 /* videoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A8C28A1D23E006EB856 /* videoPlayerUITests.swift */; };
+		24565A8F28A1D23E006EB856 /* videoPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A8E28A1D23E006EB856 /* videoPlayerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24565A8128A1CDB8006EB856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24565A4E28970283006EB856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24565A5528970283006EB856;
+			remoteInfo = videoPlayer;
+		};
+		24565A9028A1D23E006EB856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24565A4E28970283006EB856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24565A5528970283006EB856;
+			remoteInfo = videoPlayer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24565A5628970283006EB856 /* videoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,12 +46,31 @@
 		24565A6528970286006EB856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24565A6728970286006EB856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24565A6D28973573006EB856 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		24565A70289748F6006EB856 /* banana.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = banana.mp4; sourceTree = "<group>"; };
 		24565A7528A08F6A006EB856 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		24565A7728A1CC8C006EB856 /* banana.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = banana.mp4; sourceTree = "<group>"; };
+		24565A7D28A1CDB8006EB856 /* videoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24565A7F28A1CDB8006EB856 /* videoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerTests.swift; sourceTree = "<group>"; };
+		24565A8A28A1D23E006EB856 /* videoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24565A8C28A1D23E006EB856 /* videoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerUITests.swift; sourceTree = "<group>"; };
+		24565A8E28A1D23E006EB856 /* videoPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		24565A5328970283006EB856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24565A7A28A1CDB8006EB856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24565A8728A1D23E006EB856 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				24565A5828970283006EB856 /* videoPlayer */,
+				24565A7E28A1CDB8006EB856 /* videoPlayerTests */,
+				24565A8B28A1D23E006EB856 /* videoPlayerUITests */,
 				24565A5728970283006EB856 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				24565A5628970283006EB856 /* videoPlayer.app */,
+				24565A7D28A1CDB8006EB856 /* videoPlayerTests.xctest */,
+				24565A8A28A1D23E006EB856 /* videoPlayerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,7 +111,7 @@
 				24565A6228970286006EB856 /* Assets.xcassets */,
 				24565A6428970286006EB856 /* LaunchScreen.storyboard */,
 				24565A6728970286006EB856 /* Info.plist */,
-				24565A70289748F6006EB856 /* banana.mp4 */,
+				24565A7728A1CC8C006EB856 /* banana.mp4 */,
 			);
 			path = videoPlayer;
 			sourceTree = "<group>";
@@ -97,6 +140,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		24565A7E28A1CDB8006EB856 /* videoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				24565A7F28A1CDB8006EB856 /* videoPlayerTests.swift */,
+			);
+			path = videoPlayerTests;
+			sourceTree = "<group>";
+		};
+		24565A8B28A1D23E006EB856 /* videoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24565A8C28A1D23E006EB856 /* videoPlayerUITests.swift */,
+				24565A8E28A1D23E006EB856 /* videoPlayerUITestsLaunchTests.swift */,
+			);
+			path = videoPlayerUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +177,42 @@
 			productReference = 24565A5628970283006EB856 /* videoPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		24565A7C28A1CDB8006EB856 /* videoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24565A8328A1CDB8006EB856 /* Build configuration list for PBXNativeTarget "videoPlayerTests" */;
+			buildPhases = (
+				24565A7928A1CDB8006EB856 /* Sources */,
+				24565A7A28A1CDB8006EB856 /* Frameworks */,
+				24565A7B28A1CDB8006EB856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24565A8228A1CDB8006EB856 /* PBXTargetDependency */,
+			);
+			name = videoPlayerTests;
+			productName = videoPlayerTests;
+			productReference = 24565A7D28A1CDB8006EB856 /* videoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24565A8928A1D23E006EB856 /* videoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24565A9228A1D23E006EB856 /* Build configuration list for PBXNativeTarget "videoPlayerUITests" */;
+			buildPhases = (
+				24565A8628A1D23E006EB856 /* Sources */,
+				24565A8728A1D23E006EB856 /* Frameworks */,
+				24565A8828A1D23E006EB856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24565A9128A1D23E006EB856 /* PBXTargetDependency */,
+			);
+			name = videoPlayerUITests;
+			productName = videoPlayerUITests;
+			productReference = 24565A8A28A1D23E006EB856 /* videoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +225,14 @@
 				TargetAttributes = {
 					24565A5528970283006EB856 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					24565A7C28A1CDB8006EB856 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 24565A5528970283006EB856;
+					};
+					24565A8928A1D23E006EB856 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 24565A5528970283006EB856;
 					};
 				};
 			};
@@ -146,6 +250,8 @@
 			projectRoot = "";
 			targets = (
 				24565A5528970283006EB856 /* videoPlayer */,
+				24565A7C28A1CDB8006EB856 /* videoPlayerTests */,
+				24565A8928A1D23E006EB856 /* videoPlayerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,8 +262,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				24565A6628970286006EB856 /* LaunchScreen.storyboard in Resources */,
-				24565A71289748F6006EB856 /* banana.mp4 in Resources */,
 				24565A6328970286006EB856 /* Assets.xcassets in Resources */,
+				24565A7828A1CC8C006EB856 /* banana.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24565A7B28A1CDB8006EB856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24565A8828A1D23E006EB856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +296,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24565A7928A1CDB8006EB856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24565A8028A1CDB8006EB856 /* videoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24565A8628A1D23E006EB856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24565A8D28A1D23E006EB856 /* videoPlayerUITests.swift in Sources */,
+				24565A8F28A1D23E006EB856 /* videoPlayerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24565A8228A1CDB8006EB856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24565A5528970283006EB856 /* videoPlayer */;
+			targetProxy = 24565A8128A1CDB8006EB856 /* PBXContainerItemProxy */;
+		};
+		24565A9128A1D23E006EB856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24565A5528970283006EB856 /* videoPlayer */;
+			targetProxy = 24565A9028A1D23E006EB856 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		24565A6428970286006EB856 /* LaunchScreen.storyboard */ = {
@@ -358,6 +508,76 @@
 			};
 			name = Release;
 		};
+		24565A8428A1CDB8006EB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA88YFL86G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernando.videoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoPlayer.app/videoPlayer";
+			};
+			name = Debug;
+		};
+		24565A8528A1CDB8006EB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA88YFL86G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernando.videoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoPlayer.app/videoPlayer";
+			};
+			name = Release;
+		};
+		24565A9328A1D23E006EB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA88YFL86G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernando.videoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = videoPlayer;
+			};
+			name = Debug;
+		};
+		24565A9428A1D23E006EB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WA88YFL86G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernando.videoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = videoPlayer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +595,24 @@
 			buildConfigurations = (
 				24565A6B28970286006EB856 /* Debug */,
 				24565A6C28970286006EB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24565A8328A1CDB8006EB856 /* Build configuration list for PBXNativeTarget "videoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24565A8428A1CDB8006EB856 /* Debug */,
+				24565A8528A1CDB8006EB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24565A9228A1D23E006EB856 /* Build configuration list for PBXNativeTarget "videoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24565A9328A1D23E006EB856 /* Debug */,
+				24565A9428A1D23E006EB856 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

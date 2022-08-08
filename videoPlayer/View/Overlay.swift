@@ -21,12 +21,14 @@ class Overlay: UIView {
         return button
     }()
     
-    var progress: UIProgressView = {
-        let bar = UIProgressView(progressViewStyle: .bar)
+    lazy var slider: UISlider = {
+        let bar = UISlider(frame: .zero)
         bar.translatesAutoresizingMaskIntoConstraints = false
-        bar.trackTintColor = .red
+//        bar.trackTintColor = .red
+        bar.addTarget(self, action: #selector(sliderTime), for: .valueChanged)
         return bar
     }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,15 +42,15 @@ class Overlay: UIView {
     
     func setUp() {
         addSubview(playPauseButton)
-        addSubview(progress)
+        addSubview(slider)
         playPauseButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         playPauseButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         playPauseButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
         playPauseButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
-        progress.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
-        progress.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
-        progress.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50).isActive = true
+        slider.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
+        slider.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
+        slider.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50).isActive = true
     }
     
     @objc func playPauseAction(){
@@ -62,12 +64,12 @@ class Overlay: UIView {
         isPlaying = !isPlaying
     }
     
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @objc func sliderTime() {
+        player?.sliderTimeSet(slider.value)
     }
-    */
+    
+    func setSlider(value: Float){
+        slider.value = value
+    }
 
 }
