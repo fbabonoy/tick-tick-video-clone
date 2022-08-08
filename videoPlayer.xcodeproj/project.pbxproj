@@ -14,6 +14,7 @@
 		24565A6628970286006EB856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24565A6428970286006EB856 /* LaunchScreen.storyboard */; };
 		24565A6E28973573006EB856 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A6D28973573006EB856 /* CollectionViewCell.swift */; };
 		24565A71289748F6006EB856 /* banana.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24565A70289748F6006EB856 /* banana.mp4 */; };
+		24565A7628A08F6A006EB856 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24565A7528A08F6A006EB856 /* Overlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		24565A6728970286006EB856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24565A6D28973573006EB856 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		24565A70289748F6006EB856 /* banana.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = banana.mp4; sourceTree = "<group>"; };
+		24565A7528A08F6A006EB856 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		24565A5828970283006EB856 /* videoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				24565A7428A05460006EB856 /* Model */,
+				24565A7228A05443006EB856 /* View */,
+				24565A7328A0544C006EB856 /* View Model */,
 				24565A5928970283006EB856 /* AppDelegate.swift */,
 				24565A5B28970283006EB856 /* SceneDelegate.swift */,
-				24565A5D28970283006EB856 /* ViewController.swift */,
-				24565A6D28973573006EB856 /* CollectionViewCell.swift */,
 				24565A6228970286006EB856 /* Assets.xcassets */,
 				24565A6428970286006EB856 /* LaunchScreen.storyboard */,
 				24565A6728970286006EB856 /* Info.plist */,
 				24565A70289748F6006EB856 /* banana.mp4 */,
 			);
 			path = videoPlayer;
+			sourceTree = "<group>";
+		};
+		24565A7228A05443006EB856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24565A5D28970283006EB856 /* ViewController.swift */,
+				24565A6D28973573006EB856 /* CollectionViewCell.swift */,
+				24565A7528A08F6A006EB856 /* Overlay.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24565A7328A0544C006EB856 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		24565A7428A05460006EB856 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 				24565A5E28970283006EB856 /* ViewController.swift in Sources */,
 				24565A5A28970283006EB856 /* AppDelegate.swift in Sources */,
 				24565A6E28973573006EB856 /* CollectionViewCell.swift in Sources */,
+				24565A7628A08F6A006EB856 /* Overlay.swift in Sources */,
 				24565A5C28970283006EB856 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
